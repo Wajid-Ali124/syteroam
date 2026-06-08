@@ -1,0 +1,265 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   KEY FEATURES SECTION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sr-keyfeatures {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* ── Container & Grid System ─────────────────────────────────────────────── */
+.sr-keyfeatures__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  /* keep above the floating circle */
+}
+
+@media (min-width: 576px) {
+  .sr-keyfeatures__container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sr-keyfeatures__container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sr-keyfeatures__container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sr-keyfeatures__container {
+    max-width: 1140px;
+  }
+}
+
+.sr-keyfeatures__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.sr-keyfeatures__row--center {
+  justify-content: center;
+}
+
+.sr-keyfeatures__row--align-center {
+  align-items: center;
+}
+
+.sr-col {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.sr-col-title {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .sr-col-title {
+    width: 66.666667%;
+    /* 8/12 */
+  }
+}
+
+.sr-col-half-lg {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .sr-col-half-lg {
+    width: 50%;
+  }
+}
+
+.sr-col-half-sm {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .sr-col-half-sm {
+    width: 50%;
+  }
+}
+
+/* ── Section Title ───────────────────────────────────────────────────────── */
+.sr-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sr-section-title__heading {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #151515;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+  .sr-section-title__heading {
+    font-size: 32px;
+  }
+}
+
+/* ── Feature Cards ───────────────────────────────────────────────────────── */
+.sr-feature-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.sr-feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: none;
+  /* explicitly matches legacy behavior */
+}
+
+.sr-feature-card__icon {
+  font-size: 40px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #858585;
+  /* legacy default icon color */
+  transition: all 0.3s;
+}
+
+/* On hover, icon and title inherit the gradient color */
+.sr-feature-card:hover .sr-feature-card__icon,
+.sr-feature-card:hover .sr-feature-card__title {
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #5a02b4;
+  /* fallback */
+}
+
+.sr-feature-card__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #151515;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+.sr-feature-card__text {
+  color: #858585;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .sr-keyfeatures__list-wrap {
+    padding-bottom: 50px;
+  }
+}
+
+/* ── Floating Background Elements ────────────────────────────────────────── */
+.sr-keyfeatures__circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+  /* Was -1 in legacy, but needs to be 1 so it sits above section background but below container z-index:2 */
+  animation: movecircles 15s linear infinite;
+}
+
+/* ── Mockup Area ─────────────────────────────────────────────────────────── */
+.sr-keyfeatures__mockup-wrap {
+  position: relative;
+  min-height: 450px;
+}
+
+.sr-keyfeatures__bordered-box {
+  background-image: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 80px;
+  top: -30px;
+  animation: roatateAnim 15s linear infinite;
+}
+
+@media only screen and (max-width: 991px) {
+  .sr-keyfeatures__bordered-box {
+    width: 60%;
+    top: 30px;
+    height: 50%;
+  }
+}
+
+.sr-keyfeatures__phone-1 {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  animation: MoveUpDown 3s infinite alternate;
+  max-width: 100%;
+  height: auto;
+}
+
+.sr-keyfeatures__phone-2 {
+  position: absolute;
+  left: 180px;
+  z-index: 0;
+  animation: MoveUpDown 3s infinite alternate;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .sr-keyfeatures__phone-1 {
+    max-width: 85%;
+  }
+
+  .sr-keyfeatures__phone-2 {
+    z-index: 0;
+    max-width: 85%;
+    left: 50px;
+    bottom: -25px;
+  }
+}
+
+/* ── Keyframes (Imported locally to ensure encapsulation) ────────────────── */
+@keyframes roatateAnim {
+  0% {
+    transform: rotate(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+/* Relying on global movecircles and MoveUpDown from hero.css */

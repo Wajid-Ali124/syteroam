@@ -1,0 +1,547 @@
+/* ====================================================
+   ABOUT US PAGE - PREMIUM DESIGN
+   ==================================================== */
+
+.sr-about-page {
+  background: #ffffff;
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  color: #4b5563;
+  overflow-x: hidden;
+}
+
+.sr-about-page h1,
+.sr-about-page h2,
+.sr-about-page h3,
+.sr-about-page h4 {
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+}
+
+.bg-light-alt {
+  background-color: #f8fafc;
+}
+
+.text-center {
+  text-align: center;
+}
+.max-w-800 {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* ---- About Hero ---- */
+.sr-about-hero {
+  position: relative;
+  padding: 160px 20px 120px;
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sr-about-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  backdrop-filter: blur(5px);
+}
+
+.sr-about-hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  text-align: center;
+}
+
+.sr-about-hero-content h1 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.sr-about-hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #e2e8f0;
+  max-width: 760px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Floating Background Elements */
+.sr-about-hero__circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  filter: blur(8px);
+  z-index: 1;
+}
+.c1 {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -100px;
+}
+.c2 {
+  width: 300px;
+  height: 300px;
+  bottom: -50px;
+  right: -50px;
+  background: radial-gradient(
+    circle,
+    rgba(139, 92, 246, 0.4) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+.c3 {
+  width: 150px;
+  height: 150px;
+  top: 30%;
+  right: 20%;
+  background: rgba(255, 255, 255, 0.05);
+}
+.c4 {
+  width: 80px;
+  height: 80px;
+  bottom: 20%;
+  left: 15%;
+  background: rgba(255, 255, 255, 0.08);
+  filter: blur(2px);
+}
+
+/* ---- Container ---- */
+.sr-about-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+/* ---- Sections General ---- */
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+
+section p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ---- Our Story (Split Layout) ---- */
+.layout-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-graphic-pro {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sg-blob {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(to right bottom, #6509e2, #a855f7);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  filter: blur(40px);
+  opacity: 0.25;
+  animation: morphBlob 8s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+@keyframes morphBlob {
+  0% {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+    transform: scale(1.1) rotate(20deg);
+  }
+}
+
+.sg-device {
+  position: relative;
+  z-index: 2;
+  max-width: 450px;
+  height: auto;
+  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.2));
+}
+
+.sg-glass-card {
+  position: absolute;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: floatGlass 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlass {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.sg-pos-1 {
+  top: 15%;
+  left: -15%;
+  animation-delay: 0s;
+}
+
+.sg-pos-2 {
+  bottom: 20%;
+  right: -15%;
+  animation-delay: 2s;
+}
+
+.sg-glass-icon {
+  font-size: 20px;
+  background: linear-gradient(135deg, #f3e8ff, #e0e7ff);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sg-glass-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.sg-glass-text span {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.story-text strong {
+  color: #6509e2;
+  font-weight: 700;
+}
+
+/* ---- Roles Grid (Cards) ---- */
+.role-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.role-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.role-card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.role-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.role-card p {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ---- Pillars Grid ---- */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.pillar-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #f1f5f9;
+}
+
+.pillar-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.pillar-card h3 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.pillar-card p {
+  font-size: 15px;
+  color: #64748b;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.pillar-glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(
+    circle,
+    rgba(109, 40, 217, 0.05) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: -50px;
+  left: -50px;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+.pillar-card:hover .pillar-glow {
+  transform: scale(2);
+}
+
+/* ---- Who We Serve (List Grid) ---- */
+.serve-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.serve-item {
+  display: flex;
+  gap: 20px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  border: 1px solid #e2e8f0;
+}
+
+.serve-check {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #10b981;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.serve-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.serve-item p {
+  font-size: 15px;
+  margin: 0;
+  color: #64748b;
+}
+
+/* ---- CTA Wrapper (Modern Glass/Gradient Block) ---- */
+.sr-about-cta-wrapper {
+  padding: 100px 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.sr-about-cta {
+  position: relative;
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  border-radius: 32px;
+  padding: 80px 40px;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -15px rgba(101, 9, 226, 0.4);
+}
+
+.sr-about-cta h2 {
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.sr-about-cta p {
+  font-size: 18px;
+  color: #e2e8f0;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 10;
+}
+
+.cta-btn {
+  border-radius: 30px !important;
+  font-size: 16px;
+  padding: 16px 40px;
+}
+
+/* Decorative animated shapes for CTA */
+.cta-shape {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  z-index: 1;
+}
+.cta-s1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -100px;
+}
+.cta-s2 {
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  right: -150px;
+  border-radius: 60px;
+}
+
+/* ---- Responsive Adapts ---- */
+@media (max-width: 992px) {
+  .layout-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .story-image-wrapper {
+    min-height: 300px;
+  }
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .serve-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sg-pos-1 {
+    top: 5%;
+    left: 0%;
+    animation-delay: 0s;
+  }
+
+  .sg-pos-2 {
+    bottom: 10%;
+    right: 0%;
+    animation-delay: 2s;
+  }
+  .sr-about-hero-content h1 {
+    font-size: 38px;
+  }
+  .sr-about-hero-content p {
+    font-size: 16px;
+  }
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  section {
+    padding: 60px 0;
+  }
+  section h2 {
+    font-size: 28px;
+  }
+  .sr-about-cta {
+    padding: 60px 20px;
+    border-radius: 24px;
+  }
+  .sr-about-cta h2 {
+    font-size: 32px;
+  }
+}

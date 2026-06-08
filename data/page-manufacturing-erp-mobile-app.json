@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "Manufacturing ERP Mobile App | SyteRoam",
+    "description": "Improve manufacturing workflows with SyteRoam ERP mobile app. Access real-time production, inventory, and operations data on mobile devices. Download the app now!",
+    "keywords": "manufacturing ERP mobile app, manufacturing ERP on mobile phone, ERP for manufacturing on phone, mobile ERP manufacturing",
+    "url": "/manufacturing-erp-mobile-app"
+  },
+  "heroarea": {
+    "imgurl1": "/assets/img/hero-mock.png",
+    "title": "Manufacturing ERP on Mobile",
+    "content": "Modern industrial leaders use this manufacturing ERP mobile app to bridge the gap between the back office and the shop floor. SyteRoam delivers specific tools designed for the unique pressures of a high-volume production environment without the need for a desktop.",
+    "btn1label": "Request a Demo",
+    "btn1url": "demo",
+    "btn2label": "",
+    "btn2url": ""
+  },
+  "features": {
+    "sectiontitle": "Core Features for Mobile Manufacturing ERP",
+    "sectionsubtitle": "Engineered for speed, accuracy, and agility on the factory floor.",
+    "imgurl1": "/assets/img/iphone-1.png",
+    "imgurl2": "/assets/img/iphone-2.png",
+    "featurescontent": [
+      {
+        "title": "Live Production and Job Status",
+        "icon": "icofont-speed-meter",
+        "content": "Operators view real-time status updates and routing progress directly from their stations through this manufacturing ERP mobile app. SyteRoam ensures that every production milestone reflects in the system to maintain accurate schedules."
+      },
+      {
+        "title": "Mobile Inventory and Stock Movements",
+        "icon": "icofont-box",
+        "content": "Field teams log material transfers and inventory adjustments at the point of action through this mobile ERP manufacturing tool. SyteRoam ensures that raw materials map correctly to every active job for precise tracking."
+      },
+      {
+        "title": "Work Orders and Task Updates",
+        "icon": "icofont-tasks",
+        "content": "Staff members receive and update digital work orders directly on their smartphones to eliminate manual paperwork. This ERP for manufacturing on phone allows for immediate logging of completed tasks and labor hours."
+      },
+      {
+        "title": "Barcode and QR-Based Data Capture",
+        "icon": "icofont-barcode",
+        "content": "Technicians use the mobile camera to scan parts and track bin locations instantly through this manufacturing ERP mobile app. SyteRoam reduces manual entry errors and ensures the warehouse reflects actual physical stock levels."
+      },
+      {
+        "title": "Remote Approvals and Alerts",
+        "icon": "icofont-notification",
+        "content": "Managers receive instant notifications for material requisitions and production bottlenecks on their handheld devices. This mobile ERP manufacturing solution allows for rapid decision-making to prevent extended delays across the entire facility."
+      },
+      {
+        "title": "Role-Based Dashboards for Manufacturing",
+        "icon": "icofont-dashboard-web",
+        "content": "Every user accesses a customized interface tailored to their specific production responsibilities. This ERP for manufacturing on phone ensures that operators see only the data relevant to their current assignments and station."
+      }
+    ]
+  },
+  "howitworks": {
+    "sectiontitle": "How Mobile ERP Works",
+    "features": [
+      {
+        "title": "Secure Role-Based Login",
+        "icon": "icofont-lock",
+        "content": "Access the system through a secure portal that recognizes your specific manufacturing role. This manufacturing ERP mobile app ensures that operators only see the work orders and data relevant to their specific station."
+      },
+      {
+        "title": "Live Shop Floor Execution",
+        "icon": "icofont-worker",
+        "content": "Update labor hours and material usage while standing at the machine. This ERP for manufacturing on phone maintains a constant connection to ensure that every production milestone is recorded as it happens."
+      },
+      {
+        "title": "Background Data Sync",
+        "icon": "icofont-refresh",
+        "content": "Submit completed entries to update the core SyteLine system instantly. The data flows seamlessly from the mobile device to the office to allow managers to view current inventory and job status."
+      }
+    ]
+  },
+  "screenshots": {
+    "sectiontitle": "Built for Modern Manufacturing Operations",
+    "sectionsubtitle": "SyteRoam is engineered to handle the high-transaction volume of professional factory environments. This mobile ERP manufacturing solution provides the stability and speed required by companies managing complex BOMs and global supply chains.",
+    "ctaLabel": "Request a Demo",
+    "ctaUrl": "demo",
+    "images": [
+      "/assets/img/ss1.png",
+      "/assets/img/ss2.png",
+      "/assets/img/ss3.png",
+      "/assets/img/ss4.png",
+      "/assets/img/ss5.png"
+    ]
+  },
+  "erpWorkflow": {
+    "sectiontitle": "Expert Support for Mobile ERP Deployment",
+    "content": "Our specialists provide full implementation and training services to ensure a successful rollout of your manufacturing ERP mobile app. We help optimize your mobile workflows to match your specific production requirements and staff capabilities.",
+    "ctaLabel": "Read the Report",
+    "ctaUrl": "blog"
+  },
+  "faq": {
+    "sectiontitle": "FAQs",
+    "faqs": [
+      {
+        "question": "What is manufacturing ERP on mobile?",
+        "answer": "SyteRoam delivers CloudSuite Industrial ERP data to smartphones for shop-floor teams. Live production, inventory, and work orders accessible anywhere in the plant."
+      },
+      {
+        "question": "Does SyteRoam work offline in factories?",
+        "answer": "Yes, local caching stores recent work orders and inventory data. Automatic sync occurs when Wi-Fi returns, ensuring no data loss during production gaps."
+      },
+      {
+        "question": "Which manufacturing roles use mobile ERP?",
+        "answer": "Operators view job status, supervisors approve changes, warehouse staff scan inventory, and managers track KPIs—all from native SyteRoam phone interface."
+      },
+      {
+        "question": "Can phones replace desktops for ERP access?",
+        "answer": "Absolutely. Touch-optimized SyteRoam provides full manufacturing ERP functions without VPN, browsers, or desktop clients across iOS and Android devices."
+      },
+      {
+        "question": "How does mobile ERP improve shop floor accuracy?",
+        "answer": "Real-time barcode scanning, instant work order updates, and equipment history access eliminate paper errors and double data entry during production runs."
+      },
+      {
+        "question": "What manufacturing data syncs to mobile?",
+        "answer": "Work orders, production schedules, inventory levels, material consumption, quality checks, and job costing sync bidirectionally between SyteRoam and CloudSuite Industrial."
+      },
+      {
+        "question": "Is SyteRoam secure for plant floor phones?",
+        "answer": "Enterprise AES-256 encryption, biometric authentication, role-based permissions, and compliant with manufacturing data regulations protect sensitive production information."
+      },
+      {
+        "question": "How fast does mobile ERP deployment take?",
+        "answer": "Standard rollout completes in 4-6 weeks including SyteLine mapping, user training, device testing, and go-live support for manufacturing teams."
+      }
+    ]
+  },
+  "preface": {
+    "sectiontitle": "Access Manufacturing ERP on Your Phone Today",
+    "content": "Download SyteRoam today for a high-performance mobile ERP manufacturing solution that keeps your production team connected. This tool ensures that your central database remains synchronized with every action taken on the floor.",
+    "btn1label": "Contact Us Today",
+    "btn1url": "contact",
+    "imgurl": "/assets/img/preface.png"
+  }
+}

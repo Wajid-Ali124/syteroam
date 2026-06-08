@@ -1,0 +1,46 @@
+@import './css/navbar.css';
+@import './css/preloader.css';
+@import './css/hero.css';
+@import './css/keyfeatures.css';
+@import './css/featureone.css';
+@import './css/featuretwo.css';
+@import './css/services.css';
+@import './css/howitworks.css';
+@import './css/screenshots.css';
+@import './css/preface.css';
+@import './css/testimonials.css';
+@import './css/footer.css';
+@import './css/legal.css';
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   GLOBAL SECTION HEADING CONSISTENCY
+   All section title h2s: 42px desktop → 30px mobile
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Desktop — enforce 42px on all section title headings */
+.sr-section-title__heading,
+.sr-preface__section-title h2,
+.sr-screenshots__section-title h2,
+.sr-howitworks__section-title h2,
+.sr-erpworkflow__title,
+.sr-mobileerp__section-title h2,
+.sr-keyfeatures .sr-section-title__heading,
+.sr-featureone__title,
+.sr-featuretwo__title {
+  font-size: 42px;
+}
+
+/* Mobile — scale all down to 30px */
+@media (max-width: 767px) {
+  .sr-section-title__heading,
+  .sr-preface__section-title h2,
+  .sr-screenshots__section-title h2,
+  .sr-howitworks__section-title h2,
+  .sr-erpworkflow__title,
+  .sr-mobileerp__section-title h2,
+  .sr-keyfeatures .sr-section-title__heading,
+  .sr-featureone__title,
+  .sr-featuretwo__title {
+    font-size: 30px !important;
+  }
+}

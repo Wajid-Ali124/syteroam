@@ -1,0 +1,109 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   SERVICES SECTION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sr-services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .sr-services {
+    padding-bottom: 50px;
+  }
+}
+
+/* ── Container & Grid System ─────────────────────────────────────────────── */
+.sr-services__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px)  { .sr-services__container { max-width: 540px; } }
+@media (min-width: 768px)  { .sr-services__container { max-width: 720px; } }
+@media (min-width: 992px)  { .sr-services__container { max-width: 960px; } }
+@media (min-width: 1200px) { .sr-services__container { max-width: 1140px; } }
+
+.sr-services__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center; /* Inherited cleanly from legacy justify-content-md-center */
+}
+
+.sr-services__col {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .sr-services__col {
+    width: 50%; /* Maps to col-md-6 */
+  }
+}
+@media (min-width: 992px) {
+  .sr-services__col {
+    width: 33.333333%; /* Maps to col-lg-4 */
+  }
+}
+
+/* ── Service Box Card Component ──────────────────────────────────────────── */
+.sr-services-card {
+  border: 1px solid #eeeeee; /* $border_color */
+  background: #ffffff;
+  transition: all 0.3s;
+  text-align: center;
+  padding: 60px; /* legacy p-60px */
+  margin-top: 10px; /* legacy m-10px-t */
+  margin-bottom: 10px; /* legacy m-10px-b */
+}
+
+.sr-services-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 25px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Scaling precision paddings derived from legacy classes */
+@media (max-width: 1199px) { .sr-services-card { padding: 40px; } }
+@media (max-width: 991px)  { .sr-services-card { padding: 30px; } }
+@media (max-width: 767px)  { .sr-services-card { padding: 20px; } }
+
+/* ── Icon & Color Interactions ───────────────────────────────────────────── */
+.sr-services-card__icon {
+  margin-bottom: 30px;
+  font-size: 40px;
+  display: inline-block;
+  color: #858585; /* Non-hover default */
+  transition: all 0.3s;
+}
+
+/* Card hover applies transparent text mask inheriting the core gradient scheme */
+.sr-services-card:hover .sr-services-card__icon {
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #5a02b4; /* Solid structural fallback */
+}
+
+/* ── Typography Definitions ──────────────────────────────────────────────── */
+.sr-services-card__title {
+  margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #151515;
+}
+
+.sr-services-card__text {
+  margin-bottom: 0px;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.7;
+  color: #858585;
+}

@@ -1,0 +1,157 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   FOOTER SECTION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sr-footer {
+  padding-top: 70px; /* .p-70px-t */
+  padding-bottom: 30px; /* .p-30px-b */
+  color: #ffffff;
+  background-color: #151515; /* $heading_color */
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+/* ── Container & Grid ────────────────────────────────────────────────────── */
+.sr-footer__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px)  { .sr-footer__container { max-width: 540px; } }
+@media (min-width: 768px)  { .sr-footer__container { max-width: 720px; } }
+@media (min-width: 992px)  { .sr-footer__container { max-width: 960px; } }
+@media (min-width: 1200px) { .sr-footer__container { max-width: 1140px; } }
+
+.sr-footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.sr-footer__col {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* ── Footer Top ──────────────────────────────────────────────────────────── */
+.sr-footer__top {
+  padding: 30px 0; /* .p-30px-tb */
+  /* Purposefully omitting border-bottom: 1px solid #dfdfdf to match user preferences from past session! */
+}
+
+.sr-footer__logo {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.sr-footer__logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sr-footer__text {
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* ── Social Networks ─────────────────────────────────────────────────────── */
+.sr-footer__social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sr-footer__social-link {
+  display: inline-block;
+  margin: 0.5em; /* 0.5em is ~8px */
+}
+
+.sr-footer__social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
+  overflow: hidden;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+/* Inherit 25px font size from original icofont CSS logic by applying directly or to ::before */
+.sr-footer__social-icon::before {
+  font-size: 25px;
+  line-height: 50px;
+  display: block;
+}
+
+@keyframes sr-animationLeft {
+  49% { transform: translateX(100%); }
+  50% { opacity: 0; transform: translateX(-100%); }
+  51% { opacity: 1; }
+}
+
+.sr-footer__social-link:hover .sr-footer__social-icon {
+  background-image: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  background-color: #5a02b4;
+  color: #ffffff;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05); /* original active spread */
+}
+
+.sr-footer__social-link:hover .sr-footer__social-icon::before {
+  animation: sr-animationLeft 0.3s forwards;
+}
+
+/* ── Legal Links ─────────────────────────────────────────────────────────── */
+.sr-footer__legal-links {
+    padding: 14px 0 14px;
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.sr-footer__legal-links a {
+  color: #858585; /* Inherits modern subtle gray instead of stark white usually... Actually original was white? No, copyright was white. Let's stick to #858585 or #fff */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.sr-footer__legal-links a:hover {
+  color: #6509e2; /* medium purple color on hover */
+}
+
+.sr-footer__legal-divider {
+  color: #858585;
+}
+
+/* ── Copyright ───────────────────────────────────────────────────────────── */
+.sr-footer__copyright {
+  padding: 30px 0; /* .p-30px-tb */
+}
+
+.sr-footer__copyright p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.sr-footer__copyright a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sr-footer__copyright a:hover {
+  color: #6509e2; /* medium purple color */
+}

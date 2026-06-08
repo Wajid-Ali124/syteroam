@@ -1,0 +1,115 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   FEATURE ONE SECTION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sr-featureone {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+/* ── Container & Grid System ─────────────────────────────────────────────── */
+.sr-featureone__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 2; /* Content stays securely above background circles */
+}
+
+@media (min-width: 576px)  { .sr-featureone__container { max-width: 540px; } }
+@media (min-width: 768px)  { .sr-featureone__container { max-width: 720px; } }
+@media (min-width: 992px)  { .sr-featureone__container { max-width: 960px; } }
+@media (min-width: 1200px) { .sr-featureone__container { max-width: 1140px; } }
+
+.sr-featureone__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: center;
+}
+
+.sr-featureone__col {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .sr-featureone__col {
+    width: 50%;
+  }
+}
+
+.sr-featureone__img-wrap {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .sr-featureone__img-wrap {
+    margin-bottom: 50px;
+  }
+}
+
+/* ── Text Content ────────────────────────────────────────────────────────── */
+.sr-featureone__title {
+  margin-bottom: 15px;
+  font-size: 42px; /* User requested: make it bigger */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #151515;
+  line-height: 1.2;
+}
+@media (max-width: 767px) {
+  .sr-featureone__title {
+    font-size: 25px; /* Scaling up the mobile baseline equivalently */
+  }
+}
+
+.sr-featureone__text {
+  margin-bottom: 25px;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.7;
+  color: #858585; 
+}
+
+/* ── Animated Background Circle ──────────────────────────────────────────── */
+.sr-featureone__circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-image: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  opacity: 0.8;
+  z-index: 1;
+  top: -60px;
+  right: -60px;
+  left: auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sr-featureone__circle {
+    right: auto;
+    left: -60px;
+  }
+}
+@media (max-width: 767px) {
+  .sr-featureone__circle {
+    width: 300px;
+    height: 300px;
+    left: -150px;
+    right: auto;
+  }
+}
+
+/* ── Animation Local Attachments ─────────────────────────────────────────── */
+.sr-featureone__img {
+  animation: MoveUpDown 3s infinite alternate; /* Relies on global Keyframe defined in Hero */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

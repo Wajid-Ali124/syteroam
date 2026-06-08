@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* ── IconFont CSS from public/assets ────────────────────────────────────── */
+@import "../public/assets/css/icofont.min.css";
+
+/* ── App.css (imports navbar, hero, footer, keyfeatures, etc.) ──────────── */
+@import "./App.css";
+
+/* ── Page-specific CSS files not covered by App.css ──────────────────────── */
+@import "./css/about.css";
+@import "./css/blog.css";
+@import "./css/contact.css";
+@import "./css/contactpage.css";
+@import "./css/demo.css";
+@import "./css/erpworkflow.css";
+@import "./css/faq.css";
+@import "./css/mobileerp.css";
+@import "./css/pricing.css";
+
+/* ── Theme variables and theme customization ────────────────────────────── */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-quicksand), sans-serif;
+  --font-heading: var(--font-poppins), sans-serif;
+}
+
+/* ── Base typography (from SyteRoam.Web _general.scss) ───────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #858585;          /* $primary_color */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  background: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: #151515;          /* $heading_color */
+  font-weight: 700;
+}
+
+h1 { font-size: 34px; }
+h2 { font-size: 30px; }
+h3 { font-size: 26px; }
+h4 { font-size: 22px; }
+h5 { font-size: 20px; }
+h6 { font-size: 22px; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover {
+  color: #6509e2;          /* $medium_purple */
+  text-decoration: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+/* ── Reusable theme utilities (mirrors SCSS theme classes) ───────────────── */
+.gradient-bg {
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  background-color: #5a02b4;
+}
+
+.gradient-bg-hover {
+  background: linear-gradient(to right bottom, #5a02b4 40%, #6509e2 70%);
+  background-color: #6509e2;
+}
+
+.gradient-text {
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #5a02b4;
+}
+
+.gray-bg {
+  background-color: #f1f1f1;
+}

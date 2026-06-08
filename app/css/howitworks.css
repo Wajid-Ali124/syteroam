@@ -1,0 +1,128 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   HOW IT WORKS SECTION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sr-howitworks {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f1f1f1; /* Legacy .gray-bg */
+  position: relative;
+}
+
+/* ── Container & Grid System ─────────────────────────────────────────────── */
+.sr-howitworks__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px)  { .sr-howitworks__container { max-width: 540px; } }
+@media (min-width: 768px)  { .sr-howitworks__container { max-width: 720px; } }
+@media (min-width: 992px)  { .sr-howitworks__container { max-width: 960px; } }
+@media (min-width: 1200px) { .sr-howitworks__container { max-width: 1140px; } }
+
+.sr-howitworks__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.sr-howitworks__row--align-center {
+  align-items: center;
+}
+
+.sr-howitworks__col-title {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 576px) {
+  .sr-howitworks__col-title {
+    width: 66.666667%; /* col-sm-8 */
+    margin-left: 16.666667%; /* offset-sm-2 */
+  }
+}
+
+.sr-howitworks__col {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .sr-howitworks__col {
+    width: 33.333333%; /* col-lg-4 */
+  }
+}
+
+/* ── Section Title ───────────────────────────────────────────────────────── */
+.sr-howitworks__section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sr-howitworks__section-title h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #151515; /* $heading_color */
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .sr-howitworks__section-title h2 {
+    font-size: 32px;
+  }
+}
+
+/* ── How-It Box Card (Extends .service-box rules natively) ──────────────── */
+.sr-howitworks-card {
+  border: 1px solid #dfdfdf; /* $border_color */
+  background: #ffffff;
+  transition: all 0.3s;
+  text-align: center;
+  padding: 50px 15px; /* legacy p-15px-lr p-50px-tb */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: calc(100% - 20px); /* 100% height minus margin top/bottom! Flawless vertical stretching */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sr-howitworks-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 25px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Icon & Color Interactions ───────────────────────────────────────────── */
+.sr-howitworks-card__icon {
+  margin-bottom: 30px;
+  font-size: 40px;
+  display: inline-block;
+  /* Always gradient for this section according to .how-it-box SCSS */
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #5a02b4; 
+}
+
+/* ── Typography Definitions ──────────────────────────────────────────────── */
+.sr-howitworks-card__title {
+  margin-bottom: 20px; /* legacy margin-bottom override for this section */
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #151515;
+}
+
+.sr-howitworks-card__text {
+  margin-bottom: 0px;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.7;
+  color: #858585; /* $primary_color */
+}

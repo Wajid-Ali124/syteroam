@@ -1,0 +1,192 @@
+/* ====================================================
+   FAQ PAGE
+   ==================================================== */
+
+.sr-faq-page {
+  background: #f8f9fb;
+  min-height: 100vh;
+}
+
+/* ---- FAQ Hero (Matches Home Page Theme) ---- */
+.sr-faq-hero {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  background-color: #5a02b4;
+  padding: 140px 0 80px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sr-faq-hero h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.sr-faq-hero p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  opacity: 0.85;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+/* Matches home page background floating circles */
+.sr-faq-hero__circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+}
+.c1 { width: 100px; height: 100px; top: 20%; left: 10%; }
+.c2 { width: 150px; height: 150px; bottom: -20px; right: 15%; }
+.c3 { width: 60px; height: 60px; top: 40%; right: 30%; }
+
+/* ---- FAQ Body ---- */
+.sr-faq-body {
+  padding: 80px 0;
+}
+
+.sr-faq-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+}
+
+/* ---- Accordion Items ---- */
+.sr-faq-item {
+  background: #ffffff;
+  border-radius: 0; /* Match SyteRoam square blocks */
+  margin-bottom: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  overflow: hidden;
+  border: 1px solid #eef0f4;
+  transition: box-shadow 0.3s;
+}
+
+.sr-faq-item:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.sr-faq-item__header {
+  padding: 22px 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #151515;
+  font-size: 16.5px;
+  transition: background 0.3s, color 0.3s;
+  user-select: none;
+}
+
+.sr-faq-item.is-open .sr-faq-item__header {
+  color: #5a02b4; /* Highlight text when open */
+}
+
+.sr-faq-item__icon {
+  font-size: 20px;
+  color: #5a02b4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+/* Plus/Minus Animation purely via CSS */
+.sr-faq-item__icon::before,
+.sr-faq-item__icon::after {
+  content: '';
+  position: absolute;
+  background-color: #5a02b4;
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Horizontal line of the plus */
+.sr-faq-item__icon::before {
+  width: 14px;
+  height: 2px;
+}
+
+/* Vertical line of the plus */
+.sr-faq-item__icon::after {
+  width: 2px;
+  height: 14px;
+}
+
+/* When open, rotate vertical line to be horizontal (making a minus) */
+.sr-faq-item.is-open .sr-faq-item__icon::after {
+  transform: rotate(90deg);
+}
+.sr-faq-item.is-open .sr-faq-item__icon::before {
+  transform: rotate(180deg);
+}
+
+/* CSS Grid Transition Hack for smooth height animation without JS measurement */
+.sr-faq-item__content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sr-faq-item.is-open .sr-faq-item__content {
+  grid-template-rows: 1fr;
+}
+
+.sr-faq-item__content-inner {
+  overflow: hidden;
+}
+
+.sr-faq-item__content-inner p {
+  padding: 0 25px 22px;
+  margin: 0;
+  color: #666;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ---- CTA Block ---- */
+.sr-faq-cta {
+  text-align: center;
+  margin-top: 60px;
+  padding: 50px 40px;
+  background: #ffffff;
+  border-radius: 0; /* Square aesthetic */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid #eef0f4;
+}
+
+.sr-faq-cta h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #151515;
+  margin-bottom: 15px;
+}
+
+.sr-faq-cta p {
+  font-family: 'Quicksand', sans-serif;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .sr-faq-hero h1 { font-size: 32px; }
+  .sr-faq-item__header { padding: 18px 20px; font-size: 15px; }
+  .sr-faq-item__content-inner p { padding: 0 20px 20px; }
+}

@@ -1,0 +1,313 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   FEATURE TWO SECTION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sr-featuretwo {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  /* Legacy .featured-2 @extend .gredient-bg */
+}
+
+@media (max-width: 767px) {
+  .sr-featuretwo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* ── Container & Grid System ─────────────────────────────────────────────── */
+.sr-featuretwo__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 576px) {
+  .sr-featuretwo__container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sr-featuretwo__container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sr-featuretwo__container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sr-featuretwo__container {
+    max-width: 1140px;
+  }
+}
+
+.sr-featuretwo__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: center;
+}
+
+.sr-featuretwo__col {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .sr-featuretwo__col {
+    width: 50%;
+  }
+}
+
+/* ── Text Content ────────────────────────────────────────────────────────── */
+.sr-featuretwo__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .sr-featuretwo__title {
+    font-size: 30px;
+    /* Legacy .section-title h2 */
+    line-height: 1.2;
+  }
+}
+
+.sr-featuretwo__text {
+  margin-bottom: 50px;
+  font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* ── App Store Buttons & QR Codes ─────────────────────────────────────────── */
+.sr-featuretwo__download-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .sr-featuretwo__download-container {
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .sr-featuretwo__download-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.sr-featuretwo__download-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 220px;
+}
+
+@media (max-width: 575px) {
+  .sr-featuretwo__download-card {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+/* App Button layout specifically designed for the Android/Apple icons */
+.sr-featuretwo__app-btn {
+  padding-left: 60px !important;
+  position: relative;
+  text-align: left;
+  line-height: 1.2;
+  display: inline-block;
+  /* Add subtle white border to distinguish button over identical gradient background */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.sr-featuretwo__download-card .sr-featuretwo__app-btn {
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  width: 100%;
+  text-align: left;
+}
+
+.sr-featuretwo__app-btn__icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sr-featuretwo__app-btn {
+    padding-left: 40px !important;
+    padding-right: 15px !important;
+    font-size: 14px;
+  }
+
+  .sr-featuretwo__app-btn__icon {
+    left: 10px;
+    font-size: 20px;
+  }
+}
+
+/* QR Code Card styling matching the theme's glassmorphism style */
+.sr-featuretwo__qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+.sr-featuretwo__qr-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.sr-featuretwo__qr-code {
+  width: 100%;
+  height: 100%;
+  max-width: 140px;
+  max-height: 140px;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sr-featuretwo__qr-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+/* ── Floating Background Element ─────────────────────────────────────────── */
+.sr-featuretwo__circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-image: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  position: absolute;
+  top: -80px;
+  left: -70px;
+  z-index: 1;
+  /* Drops a shadow so its edge is visible above the parent gradient background */
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.15), 0 0 50px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 767px) {
+  .sr-featuretwo__circle {
+    left: -150px;
+  }
+}
+
+/* ── Mockup Phone Constraints ────────────────────────────────────────────── */
+.sr-featuretwo__mockup-wrap {
+  position: relative;
+  min-height: 265px;
+}
+
+.sr-featuretwo__phone-1 {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  animation: MoveUpDown 3s infinite alternate;
+  max-width: 100%;
+}
+
+.sr-featuretwo__phone-2 {
+  position: absolute;
+  left: 180px;
+  z-index: 0;
+  animation: MoveUpDown 3s infinite alternate;
+  max-width: 100%;
+}
+
+/* Responsiveness mapped directly from _responsive.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sr-featuretwo__phone-2 {
+    left: 110px;
+  }
+
+  .sr-featuretwo__phone-1,
+  .sr-featuretwo__phone-2 {
+    width: 70%;
+  }
+
+  .sr-featuretwo__mockup-wrap {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .sr-featuretwo__phone-2 {
+    bottom: -70px;
+    left: 50px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+  .sr-featuretwo__phone-1,
+  .sr-featuretwo__phone-2 {
+    width: 70%;
+  }
+
+  .sr-featuretwo__phone-2 {
+    left: 0;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 479px) {
+
+  .sr-featuretwo__phone-1,
+  .sr-featuretwo__phone-2 {
+    width: 70%;
+  }
+
+  .sr-featuretwo__phone-2 {
+    left: 0;
+    bottom: 10px;
+  }
+}

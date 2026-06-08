@@ -1,0 +1,19 @@
+{
+  "footerlogo": "/assets/img/logo.png",
+  "footertext": "SyteRoam is the native mobile companion for CloudSuite Industrial (SyteLine). A touch-first ERP experience for every role in manufacturing and service companies — Sales, Procurement, and beyond.",
+  "socialicon": [
+    {
+      "icon": "icofont-twitter",
+      "url": "#"
+    },
+    {
+      "icon": "icofont-linkedin",
+      "url": "#"
+    },
+    {
+      "icon": "icofont-facebook",
+      "url": "#"
+    }
+  ],
+  "copyrighttext": "Copyright © SyteRoam 2026. All Rights Reserved."
+}

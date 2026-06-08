@@ -1,0 +1,336 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   TESTIMONIALS SECTION
+   Source: SyteRoam.Web/public/assets/css/scss/_testimonials-section.scss
+           SyteRoam.Web/public/assets/css/scss/_theme.scss
+           SyteRoam.Web/public/assets/css/scss/_responsive.scss
+           SyteRoam.Web/public/assets/css/style.css  (lines 1777-1836, 9464-9598)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Section wrapper (.testimonials / #testimonials)
+   Inherits .gredient-bg from theme:
+     background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%)
+     background-color: #5a02b4   (fallback)
+   p-175px-tb = padding-top/bottom: 175px
+   position-relative + overflow:hidden for absolute rotate-heading
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonials {
+  padding-top: 175px;
+  padding-bottom: 175px;
+  position: relative;
+  overflow: hidden;
+  /* .gredient-bg */
+  background: -webkit-linear-gradient(to right bottom, #6509e2, #5a02b4);
+  background: -moz-linear-gradient(to right bottom, #6509e2, #5a02b4);
+  background: -o-linear-gradient(to right bottom, #6509e2, #5a02b4);
+  background: -ms-linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  background-color: #5a02b4;
+}
+
+/* md-p-80px-tb  →  @media (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+  .sr-testimonials {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* ── Bootstrap-compatible container ────────────────────────────────────────
+   Matches the legacy .container behaviour used inside .testimonials
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonials__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (min-width: 576px)  { .sr-testimonials__container { max-width: 540px; } }
+@media (min-width: 768px)  { .sr-testimonials__container { max-width: 720px; } }
+@media (min-width: 992px)  { .sr-testimonials__container { max-width: 960px; } }
+@media (min-width: 1200px) { .sr-testimonials__container { max-width: 1140px; } }
+
+/* ── Inner .row ─────────────────────────────────────────────────────────────
+   Bootstrap .row = flex-wrap + negative gutters
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonials__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   ROTATE HEADING  (#testimonials .rotate-heading)
+   style.css lines 1779-1813
+   ══════════════════════════════════════════════════════════════════════════ */
+.sr-testimonials__rotate-heading {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+  /* z-index below slide content */
+  z-index: 0;
+}
+
+/* .rotate-heading h2  +  #testimonials .rotate-heading h2
+   font-size:100px, uppercase, weight:700, font-family:Poppins
+   color: $dark_purple (#5a02b4)   — @extend .dark-purple-color
+   opacity: 0.3                    — @include opacity(0.3)
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonials__rotate-heading h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+  color: #5a02b4;        /* $dark_purple */
+  opacity: 0.3;
+  /* IE */
+  filter: alpha(opacity=30);
+  margin: 0;
+}
+
+/* ── Responsive: 992px–1199px ───────────────────────────────────────────────
+   style.css line 9464: left:10px
+   ─────────────────────────────────────────────────────────────────────────── */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sr-testimonials__rotate-heading {
+    left: 10px;
+  }
+}
+
+/* ── Responsive: 768px–991px (Tablet) ──────────────────────────────────────
+   style.css lines 9495-9499: left:0px + h2 font-size:50px
+   ─────────────────────────────────────────────────────────────────────────── */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sr-testimonials__rotate-heading {
+    left: 0px;
+  }
+  .sr-testimonials__rotate-heading h2 {
+    font-size: 50px;
+  }
+}
+
+/* ── Responsive: <768px (Mobile) ────────────────────────────────────────────
+   style.css lines 9579-9593:
+     top:20px, left:15px, transform:translateY(0%) rotate(0deg), h2 font-size:25px
+   ─────────────────────────────────────────────────────────────────────────── */
+@media only screen and (max-width: 767px) {
+  .sr-testimonials__rotate-heading {
+    top: 20px;
+    left: 15px;
+    -webkit-transform: translateY(0%) rotate(0deg);
+    -moz-transform: translateY(0%) rotate(0deg);
+    -ms-transform: translateY(0%) rotate(0deg);
+    -o-transform: translateY(0%) rotate(0deg);
+    transform: translateY(0%) rotate(0deg);
+  }
+  .sr-testimonials__rotate-heading h2 {
+    font-size: 25px;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   SLIDER COLUMN  (.col-lg-8.offset-lg-2.testimonialSwiper.p-50px-b)
+   col-lg-8 = 66.666667%   offset-lg-2 = margin-left 16.666667%
+   p-50px-b = padding-bottom: 50px  (applied to the Swiper wrapper)
+   ══════════════════════════════════════════════════════════════════════════ */
+.sr-testimonials__slider-col {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .sr-testimonials__slider-col {
+    width: 66.666667%;       /* col-lg-8  */
+    margin-left: 16.666667%; /* offset-lg-2 */
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   SINGLE TESTIMONIAL  (.single-testimonial / .sr-testimonial__single)
+   style.css lines 1815-1833
+   ══════════════════════════════════════════════════════════════════════════ */
+.sr-testimonial__single {
+  color: #ffffff;
+}
+
+/* ── Inner .row inside each slide ──────────────────────────────────────────
+   Bootstrap .row
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: flex-start;
+}
+
+/* ── Avatar column  (col-lg-2 col-md-3) ────────────────────────────────────
+   Mobile: full-width, center-aligned
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__img-col {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sr-testimonial__img-col {
+    width: 25%;          /* col-md-3 */
+  }
+}
+
+@media (min-width: 992px) {
+  .sr-testimonial__img-col {
+    width: 16.666667%;   /* col-lg-2 */
+  }
+}
+
+/* img — .rounded-circle + border: 3px solid $border_color (#dfdfdf)
+   style.css line 1817-1818
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;               /* .rounded-circle */
+  border: 3px solid #dfdfdf;        /* $border_color */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Mobile: img margin-bottom: 25px
+   style.css line 9576-9577
+   ─────────────────────────────────────────────────────────────────────────── */
+@media only screen and (max-width: 767px) {
+  .sr-testimonial__img {
+    margin-bottom: 25px;
+  }
+}
+
+/* ── Content column  (col-lg-10 col-md-9) ──────────────────────────────────
+   Mobile: full-width, center; ≥768px: left-aligned
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__content-col {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sr-testimonial__content-col {
+    width: 75%;           /* col-md-9 */
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .sr-testimonial__content-col {
+    width: 83.333333%;    /* col-lg-10 */
+  }
+}
+
+/* ── Review text  (.single-testimonial p)
+   margin-bottom: 25px   →  style.css line 1819-1820
+   body font: Quicksand 16px / line-height 1.7  (from global body styles)
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* ── Client name  (.single-testimonial h5)
+   color:#fff, font-size:20px, margin-bottom:0px
+   heading_font = Poppins, font-weight:700   (from global h5 styles)
+   style.css lines 1821-1824
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+/* ── Designation  (.designation)
+   font-size:12px, margin-bottom:0px
+   body font + color:#fff (inherits from .single-testimonial)
+   style.css lines 1825-1827
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__designation {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+/* ── Star ratings  (.ratings)
+   color:#e79120, font-size:12px, margin-bottom:0px
+   style.css lines 1828-1831
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__ratings {
+  color: #e79120;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+/* .ratings i — margin-right:5px
+   NOTE: the legacy SCSS has a typo "marginr-right" — the correct property
+   is margin-right. We apply the correct value here.
+   style.css line 1832-1833
+   ─────────────────────────────────────────────────────────────────────────── */
+.sr-testimonial__ratings i {
+  margin-right: 5px;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   MOBILE: .single-testimonial text-align center + padding
+   style.css lines 9573-9574 + 9595-9597
+   ══════════════════════════════════════════════════════════════════════════ */
+@media only screen and (max-width: 767px) {
+  .sr-testimonial__single {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ── External pagination container — physically below the Swiper ──────── */
+.testimonial-pagination-external {
+  text-align: center;
+  margin-top: 28px;
+}
+
+/* Swiper injects .swiper-pagination-bullet into our external div */
+.testimonial-pagination-external .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  margin: 0 4px;
+}
+
+.testimonial-pagination-external .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+/* Remove the old padding-bottom used to make room for internal dots */
+.testimonial-swiper {
+  padding-bottom: 0;
+  overflow: visible;
+}
+

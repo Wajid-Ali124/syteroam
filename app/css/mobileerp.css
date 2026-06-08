@@ -1,0 +1,175 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   MOBILE ERP BENEFITS SECTION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sr-mobileerp {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f1f1f1; /* Matches .sr-howitworks gray background */
+  position: relative;
+}
+
+/* ── Container ─────────────────────────────────────────────────────────────── */
+.sr-mobileerp__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px)  { .sr-mobileerp__container { max-width: 540px; } }
+@media (min-width: 768px)  { .sr-mobileerp__container { max-width: 720px; } }
+@media (min-width: 992px)  { .sr-mobileerp__container { max-width: 960px; } }
+@media (min-width: 1200px) { .sr-mobileerp__container { max-width: 1140px; } }
+
+/* ── Section Title Row ─────────────────────────────────────────────────────── */
+.sr-mobileerp__title-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.sr-mobileerp__title-col {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 576px) {
+  .sr-mobileerp__title-col {
+    width: 66.666667%; /* col-sm-8 centered */
+    margin-left: 16.666667%; /* offset-sm-2 */
+  }
+}
+
+.sr-mobileerp__section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sr-mobileerp__section-title h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #151515;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+  .sr-mobileerp__section-title h2 {
+    font-size: 28px;
+  }
+}
+
+/* ── Benefits Grid ─────────────────────────────────────────────────────────── */
+.sr-mobileerp__grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
+.sr-mobileerp__item {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .sr-mobileerp__item {
+    width: 50%; /* 2-column on mobile/tablet */
+  }
+}
+
+@media (min-width: 992px) {
+  .sr-mobileerp__item {
+    width: 33.333333%; /* 3-column on desktop */
+  }
+}
+
+/* ── Benefit Card ──────────────────────────────────────────────────────────── */
+.sr-mobileerp-card {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  padding: 45px 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* Left-side accent line that reveals on hover */
+.sr-mobileerp-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(to bottom, #6509e2, #5a02b4);
+  transition: height 0.35s ease;
+}
+
+.sr-mobileerp-card:hover::before {
+  height: 100%;
+}
+
+.sr-mobileerp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 20px 40px 0px rgba(101, 9, 226, 0.1);
+}
+
+@media (max-width: 1199px) { .sr-mobileerp-card { padding: 35px 25px; } }
+@media (max-width: 767px)  { .sr-mobileerp-card { padding: 25px 20px; } }
+
+/* ── Icon ──────────────────────────────────────────────────────────────────── */
+.sr-mobileerp-card__icon-wrap {
+  margin-bottom: 22px;
+}
+
+.sr-mobileerp-card__icon {
+  font-size: 40px;
+  display: inline-block;
+  background: linear-gradient(to right bottom, #6509e2 40%, #5a02b4 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #5a02b4; /* Fallback */
+  transition: transform 0.3s ease;
+}
+
+.sr-mobileerp-card:hover .sr-mobileerp-card__icon {
+  transform: scale(1.15);
+}
+
+/* ── Typography ────────────────────────────────────────────────────────────── */
+.sr-mobileerp-card__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #151515;
+  margin-bottom: 12px;
+  line-height: 1.35;
+  transition: color 0.3s;
+}
+
+.sr-mobileerp-card:hover .sr-mobileerp-card__title {
+  color: #6509e2;
+}
+
+.sr-mobileerp-card__text {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.75;
+  color: #858585;
+  margin-bottom: 0;
+  font-size: 15px;
+}

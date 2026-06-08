@@ -1,0 +1,273 @@
+{
+  "heroarea": {
+    "imgurl1": "/assets/img/hero-mock.png",
+    "title": "Your SyteLine ERP. Now Touch-First & Mobile.",
+    "content": "SyteRoam is a mobile companion for CloudSuite Industrial (SyteLine), giving users secure access to key ERP workflows and information from their phone or tablet. Built for operational environments, it helps teams stay connected beyond the desktop.",
+    "btn1label": "Get Started",
+    "btn1url": "contact",
+    "btn2label": "Book a Demo",
+    "btn2url": "demo"
+  },
+  "features": {
+    "sectiontitle": "KEY FEATURES",
+    "imgurl1": "/assets/img/iphone-1.png",
+    "imgurl2": "/assets/img/iphone-2.png",
+    "featurescontent": [
+      {
+        "title": "Mobile Customer & Sales Access",
+        "icon": "icofont-people",
+        "content": "Access customer, prospect, lead, and opportunity information directly from your phone or tablet through a streamlined mobile experience connected to SyteLine."
+      },
+      {
+        "title": "Sales Workflow Visibility",
+        "icon": "icofont-chart-line-alt",
+        "content": "Stay connected to estimates, customer orders, and related sales activity with secure mobile access designed for users working beyond the desktop."
+      },
+      {
+        "title": "Purchasing & Vendor Access",
+        "icon": "icofont-cart-alt",
+        "content": "View purchase orders, vendor details, and vendor interactions from anywhere to help keep procurement activity moving throughout the day."
+      },
+      {
+        "title": "Inventory Visibility",
+        "icon": "icofont-box",
+        "content": "Access key inventory information from mobile devices, giving operational teams better visibility while working remotely or on the move."
+      },
+      {
+        "title": "Secure Mobile Connectivity",
+        "icon": "icofont-lock",
+        "content": "Secure authenticated access helps users safely connect to SyteLine data from supported mobile devices and tablets."
+      },
+      {
+        "title": "Mobile-Optimized Experience",
+        "icon": "icofont-touch",
+        "content": "Built specifically for phones and tablets, SyteRoam delivers a mobile-friendly ERP experience designed for operational business environments."
+      }
+    ]
+  },
+  "feature1": {
+    "imgurl1": "/assets/img/experience.png",
+    "title": "PURPOSE-BUILT FOR MANUFACTURING ERP USERS",
+    "content": "SyteRoam is not a generic CRM app. It is a native mobile front-end specifically designed for CloudSuite Industrial (SyteLine) users in manufacturing and service companies. Whether you are on the shop floor, in a warehouse, visiting a supplier, or meeting a customer — your ERP travels with you.",
+    "btn1label": "Explore Features",
+    "btn1url": "#"
+  },
+  "feature2": {
+    "imgurl1": "/assets/img/6mockup1.png",
+    "imgurl2": "/assets/img/6mockup2.png",
+    "title": "Full ERP Power in Your Pocket",
+    "content": "From raising a purchase order at a supplier's site to qualifying a sales lead between meetings — SyteRoam puts your entire CloudSuite Industrial system into a touch-first mobile experience, no laptop required.",
+    "btn1label": "Available on<br/>Google store",
+    "btn1url": "https://play.google.com/store/apps/details?id=com.quadkor.syteroam",
+    "btn2label": "Available on<br/>Apple store",
+    "btn2url": "https://apps.apple.com/us/app/syteroam/id6756741015"
+  },
+  "services": [
+    {
+      "title": "Sales & CRM",
+      "icon": "icofont-handshake-deal",
+      "content": "Manage leads, contacts, opportunities, and customer orders — all live from your SyteLine instance."
+    },
+    {
+      "title": "Procurement",
+      "icon": "icofont-cart-alt",
+      "content": "Create purchase orders, approve requisitions, track vendor deliveries, and manage purchasing workflows on the go."
+    },
+    {
+      "title": "Adaptive Layout",
+      "icon": "icofont-responsive",
+      "content": "Single, dual, or triple-column layouts that automatically adapt to your device type and screen orientation."
+    }
+  ],
+  "resources": {
+    "sectiontitle": "RESOURCES & GUIDES",
+    "features": [
+      {
+        "title": "ERP Android App Setup",
+        "icon": "icofont-android-tablet",
+        "content": "Download our comprehensive guide to installing and configuring the erp android app on your fleet devices."
+      },
+      {
+        "title": "SyteLine Mobile App Basics",
+        "icon": "icofont-document-folder",
+        "content": "Discover how your team can leverage this mobile erp app to access your full ERP system mobile application from the field."
+      },
+      {
+        "title": "Enterprise Rollout",
+        "icon": "icofont-building",
+        "content": "Best practices for deploying the SyteLine erp mobile app across sites and training your staff on the new erp mobile app."
+      }
+    ]
+  },
+  "howitworks": {
+    "sectiontitle": "HOW IT WORKS",
+    "features": [
+      {
+        "title": "Connect to SyteLine",
+        "icon": "icofont-lock",
+        "content": "Securely log in with your CloudSuite Industrial credentials. Multi-site configurations are supported for enterprise deployments."
+      },
+      {
+        "title": "Pick Your Role",
+        "icon": "icofont-dashboard-web",
+        "content": "Access the modules relevant to your role — Sales, Procurement, and more. Your dashboard surfaces the data that matters to you."
+      },
+      {
+        "title": "Work Anywhere",
+        "icon": "icofont-globe",
+        "content": "Raise POs, qualify leads, review orders, and update records — all from your phone or tablet, whatever your orientation."
+      }
+    ]
+  },
+  "screenshots": {
+    "sectiontitle": "APP SCREENSHOTS",
+    "images": [
+      "/assets/img/ss1.png",
+      "/assets/img/ss2.png",
+      "/assets/img/ss3.png",
+      "/assets/img/ss4.png",
+      "/assets/img/ss5.png",
+      "/assets/img/ss6.png",
+      "/assets/img/ss7.png",
+      "/assets/img/ss8.png"
+    ]
+  },
+  "preface": {
+    "sectiontitle": "GET STARTED",
+    "imgurl": "/assets/img/preface.png",
+    "title": "Welcome To SyteRoam",
+    "content": "Ready to bring your SyteLine ERP into the mobile era? SyteRoam is built for every user in your manufacturing or service organisation. Log in with your existing CloudSuite Industrial credentials and experience your ERP the way it was always meant to be — touch-first, anywhere, on any device.",
+    "btn1label": "Log In",
+    "btn1url": "#",
+    "btn2label": "Sign Up",
+    "btn2url": "#"
+  },
+  "mobileErpBenefits": {
+    "sectiontitle": "MOBILE ERP BENEFITS FOR MODERN TEAMS",
+    "benefits": [
+      {
+        "icon": "icofont-globe",
+        "title": "Access ERP Information Anywhere",
+        "content": "Give users greater flexibility to access key SyteLine information from their phone or tablet instead of being tied to a desktop workstation."
+      },
+      {
+        "icon": "icofont-mobile-phone",
+        "title": "Streamlined Mobile Experience",
+        "content": "Built specifically for operational business environments, SyteRoam delivers a mobile-friendly experience designed for day-to-day ERP access on the move."
+      },
+      {
+        "icon": "icofont-settings-alt",
+        "title": "Connected SyteLine Workflows",
+        "content": "Securely interact with supported SyteLine workflows, including sales activity, purchasing, customer information, and inventory visibility."
+      },
+      {
+        "icon": "icofont-eye",
+        "title": "Improved Operational Visibility",
+        "content": "Stay connected to estimates, customer orders, vendor activity, and inventory information while traveling, working remotely, or moving throughout the day."
+      },
+      {
+        "icon": "icofont-lock",
+        "title": "Secure Role-Based Access",
+        "content": "SyteRoam aligns with existing SyteLine user permissions to provide secure authenticated access to ERP data from mobile devices."
+      },
+      {
+        "icon": "icofont-clock-time",
+        "title": "Evolving Mobile Capabilities",
+        "content": "Additional workflows and mobile capabilities are planned as SyteRoam continues to expand and support more operational ERP activities."
+      }
+    ]
+  },
+  "erpWorkflow": {
+    "sectiontitle": "ERP THAT FITS YOUR WORKFLOW FROM DAY ONE",
+    "content": "Most ERP tools are built with a generic structure and then forced into different industries. That approach creates friction and slows teams down. SyteRoam is different. It is designed as an ERP mobile app that fits naturally into your daily operations from the start. Whether you are managing manufacturing projects, rental equipment, or field teams, the workflows already match how your business runs. There is no need for heavy customization or complex setup. Compared to traditional tools like the SyteLine ERP mobile app, this approach feels faster, simpler, and far more practical. As a modern ERP system mobile application, it keeps everything connected in real time while staying easy to use on mobile devices. If you need a reliable ERP Android app that works in real conditions, this is built for exactly that purpose."
+  },
+  "pricingtable": {
+    "sectiontitle": "Pricing Plans",
+    "tables": [
+      {
+        "title": "Field User",
+        "currency": "$",
+        "price": "29",
+        "duration": "/ Month",
+        "url": "#",
+        "features": [
+          "Sales & CRM Module",
+          "Procurement Module",
+          "Live SyteLine Data",
+          "Adaptive Mobile UI",
+          "Email Support"
+        ]
+      },
+      {
+        "title": "Team",
+        "currency": "$",
+        "price": "99",
+        "duration": "/ Month",
+        "url": "#",
+        "features": [
+          "All Field User Features",
+          "Multi-Role Access",
+          "Multi-Site Configuration",
+          "Team Dashboards",
+          "Priority Support"
+        ]
+      },
+      {
+        "title": "Enterprise",
+        "currency": "$",
+        "price": "299",
+        "duration": "/ Month",
+        "url": "#",
+        "features": [
+          "All Modules (Roadmap)",
+          "Secure SSO Login",
+          "Custom Role Configuration",
+          "Dedicated Account Manager",
+          "SLA Assured"
+        ]
+      }
+    ]
+  },
+  "testimonial": [
+    {
+      "client": "James Mitchell",
+      "designation": "Sales Manager — Industrial Manufacturer",
+      "imgurl": "/assets/img/avater2.jpeg",
+      "content": "\" SyteRoam has transformed how our sales team interacts with SyteLine. Qualifying leads and reviewing customer order history used to mean going back to a desk. Now it happens on-site, in real time. \""
+    },
+    {
+      "client": "Sarah Jenkins",
+      "designation": "Procurement Lead — Engineering Services",
+      "imgurl": "/assets/img/avater1.jpeg",
+      "content": "\" Being able to raise and approve purchase orders directly from my phone — connected live to SyteLine — has cut our procurement cycle dramatically. The tablet layout is especially useful during supplier visits. \""
+    },
+    {
+      "client": "David Thompson",
+      "designation": "Operations Director — Contract Manufacturer",
+      "imgurl": "/assets/img/avater3.jpeg",
+      "content": "\" We needed a touchscreen front-end for SyteLine that our shop floor and field teams could actually use. SyteRoam is exactly that. The UI adapts perfectly from a phone to a tablet — it just works. \""
+    }
+  ],
+  "contact": {
+    "title": "Get in touch",
+    "contactinfo": {
+      "address": {
+        "title": "Address",
+        "icon": "icofont-google-map",
+        "info": "QuadKor, Inc.<br>9655 Granite Ridge Drive, Suite 200<br>San Diego, CA, 92123"
+      },
+      "phone": {
+        "title": "Phone",
+        "icon": "icofont-phone",
+        "info": "(949) 284-8115"
+      },
+      "email": {
+        "title": "Email Address",
+        "icon": "icofont-envelope-open",
+        "info": "sales@quadkor.com<br>support@quadkor.com"
+      }
+    },
+    "formtitle": "Talk to the SyteRoam team",
+    "formdescription": "Have a question about connecting SyteRoam to your CloudSuite Industrial instance, or want to discuss an enterprise deployment? We'd love to hear from you."
+  }
+}

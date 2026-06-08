@@ -1,0 +1,383 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   NAVBAR  –  pixel-perfect recreation of SyteRoam.Web header
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Container ───────────────────────────────────────────────────────────── */
+.sr-navbar__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap; /* Ensure mobile collapse flows underneath */
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 576px)  { .sr-navbar__container { max-width: 540px; } }
+@media (min-width: 768px)  { .sr-navbar__container { max-width: 720px; } }
+@media (min-width: 992px)  { .sr-navbar__container { max-width: 960px; } }
+@media (min-width: 1200px) { .sr-navbar__container { max-width: 1140px; } }
+
+/* ── Wrapper nav ─────────────────────────────────────────────────────────── */
+.sr-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  /* Transparent initially without any background */
+  background: transparent;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: all 0.4s ease;
+}
+
+/* Fixed / scrolled state */
+.sr-navbar--fixed {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #5a02b4;        /* dark-purple */
+  box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile specific padding overrides */
+@media (max-width: 991px) {
+  .sr-navbar,
+  .sr-navbar--fixed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* ── Logo ────────────────────────────────────────────────────────────────── */
+.sr-navbar__brand {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;       /* Bootstrap .navbar-brand padding */
+  padding-bottom: 5px;
+}
+.sr-navbar__brand:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ── Nav list ────────────────────────────────────────────────────────────── */
+.sr-navbar__nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.sr-navbar__item {
+  margin-left: 15px;      /* Slightly increased from 12px for better spacing */
+  position: relative;
+}
+
+/* ── Nav links ───────────────────────────────────────────────────────────── */
+.sr-navbar__link {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    transition: color 0.3s;
+    padding: 10px 0.48rem;
+}
+
+.sr-navbar__link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Underline slide-in animation (desktop ≥ 992px) */
+@media (min-width: 992px) {
+  .sr-navbar__link::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s, width 0.4s;
+  }
+
+  .sr-navbar__link:hover::after,
+  .sr-navbar__link.active::after {
+    opacity: 1;
+    width: 35px;
+  }
+}
+
+/* ── Hamburger toggler (CSS Animation) ──────────────────────────────────── */
+.sr-navbar__toggler {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid transparent; 
+  cursor: pointer;
+  outline: none;
+}
+
+.sr-navbar__bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* ── Mobile menu rules ───────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  .sr-navbar__toggler {
+    display: flex;
+  }
+
+  /* Animate to cross when open  (gap:5px + bar:3px = 8px offset) */
+  .sr-navbar__toggler[aria-expanded="true"] .sr-navbar__bar--top {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .sr-navbar__toggler[aria-expanded="true"] .sr-navbar__bar--mid {
+    opacity: 0;
+  }
+  .sr-navbar__toggler[aria-expanded="true"] .sr-navbar__bar--bot {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* When mobile menu opens, ensure parent gets background so text is readable */
+  .sr-navbar--open {
+    background-color: #5a02b4;
+    /* remove transition delay so it instantly hides background on close */
+    transition: background-color 0s;
+  }
+
+  .sr-navbar__collapse {
+    display: none;
+    flex-basis: 100%; /* Flows underneath logo naturally in flex container */
+    flex-grow: 1;
+    padding: 10px 0 5px;
+  }
+
+  .sr-navbar__collapse--open {
+    display: block;
+  }
+
+  .sr-navbar__nav {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5px;
+  }
+
+  .sr-navbar__item {
+    margin: 0;
+    padding-left: 0px;  /* flush with container */
+    padding-right: 0px;
+  }
+
+  .sr-navbar__link {
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: 700; /* typical for mobile full width nav items */
+  }
+
+  .sr-navbar__link:hover,
+  .sr-navbar__link.active {
+    background: #151515;   /* highlight bg */
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MORE DROPDOWN
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* The dropdown toggle button inherits .sr-navbar__link styles */
+.sr-navbar__dropdown-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Chevron rotation when open */
+.sr-navbar__chevron {
+  display: inline-block;
+  transition: transform 0.25s ease;
+  font-size: 0.75em;
+  line-height: 1;
+}
+.sr-navbar__item--open .sr-navbar__chevron {
+  transform: rotate(180deg);
+}
+
+/* ── Desktop dropdown panel ─── */
+@media (min-width: 992px) {
+  .sr-navbar__item--dropdown {
+    position: relative;
+  }
+
+  .sr-navbar__dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 180px;
+    background: #5a02b4;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    z-index: 200;
+  }
+
+  .sr-navbar__item--open .sr-navbar__dropdown {
+    display: block;
+  }
+
+  .sr-navbar__dropdown li {
+    width: 100%;
+  }
+
+  .sr-navbar__dropdown-link {
+    display: block;
+    padding: 10px 18px;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+
+  .sr-navbar__dropdown-link:hover {
+    background: rgba(255,255,255,0.12);
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+/* ── Mobile dropdown: accordion ─── */
+@media (max-width: 991px) {
+  .sr-navbar__dropdown {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+  }
+
+  .sr-navbar__item--open .sr-navbar__dropdown {
+    display: block;
+  }
+
+  .sr-navbar__dropdown-link {
+    display: block;
+    padding: 9px 15px;
+    color: rgba(255,255,255,0.85);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .sr-navbar__dropdown-link:hover {
+    background: #151515;
+    color: #ffffff;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BOOK A DEMO CTA BUTTON
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.sr-navbar__cta-wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+  flex-shrink: 0;
+}
+
+.sr-navbar__cta {
+  display: inline-block;
+  padding: 9px 22px;
+  background: #ffffff;
+  color: #5a02b4;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.4s, box-shadow 0.4s, color 0.4s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* Rotating gradient sweep — same mechanic as .sr-hero__btn::before */
+.sr-navbar__cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to right bottom, #5a02b4 40%, #6509e2 70%);
+  z-index: -1;
+  opacity: 0;
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  transform-origin: 0% 100%;
+  transition: transform 0.5s, opacity 0.1s;
+  border-radius: 50px;
+}
+
+.sr-navbar__cta:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+.sr-navbar__cta:hover::before {
+  opacity: 1;
+  transform: rotate3d(0, 0, 1, 0deg);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.sr-navbar__cta:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* On mobile: full-width pill, placed below nav links */
+@media (max-width: 991px) {
+  .sr-navbar__cta-wrap {
+    margin: 12px 15px;
+  }
+
+  .sr-navbar__cta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
