@@ -238,13 +238,13 @@ export default function ManufacturingErpMobileApp() {
       <section id="preface" className="sr-preface flex items-center mb-0 pb-[80px]">
         <div className="sr-preface__container mx-auto px-[15px] w-full max-w-[1140px]">
           <div className="sr-preface__content-row flex flex-wrap items-center mx-[-15px] pt-[80px]">
-            <div className="sr-preface__img-col w-full md:w-1/2 px-[15px]">
+            <div className="sr-preface__img-col w-full md:w-1/2 px-[15px] md:py-[30px]">
               <div className="sr-preface__img-wrap relative mb-[50px] md:mb-0">
                 <div className="sr-preface__circle absolute w-[600px] h-[600px] top-[-50px] left-[-300px] rounded-full bg-linear-to-br from-[#6509e2] to-[#5a02b4] z-0 opacity-100"></div>
                 <Image className="sr-preface__img relative z-10 max-w-full" src={preface.imgurl} alt="preface" width={485} height={972} style={{ width: '60%', height: 'auto' }} />
               </div>
             </div>
-            <div className="sr-preface__text-col w-full md:w-1/2 px-[15px]">
+            <div className="sr-preface__text-col w-full md:w-1/2 px-[15px] md:py-[30px]">
               <div className="mb-[30px]">
                 <h2 className="font-['Poppins'] font-bold text-[30px] md:text-[42px] uppercase text-[#151515] leading-tight mb-[15px]">{preface.sectiontitle}</h2>
               </div>

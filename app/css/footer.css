@@ -51,6 +51,13 @@
 .sr-footer__logo img {
   max-width: 100%;
   height: auto;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .sr-footer__logo img {
+    width: 400px;
+  }
 }
 
 .sr-footer__text {

@@ -15,10 +15,26 @@
   margin-left: auto;
 }
 
-@media (min-width: 576px)  { .sr-preface__container { max-width: 540px; } }
-@media (min-width: 768px)  { .sr-preface__container { max-width: 720px; } }
-@media (min-width: 992px)  { .sr-preface__container { max-width: 960px; } }
-@media (min-width: 1200px) { .sr-preface__container { max-width: 1140px; } }
+@media (min-width: 576px) {
+  .sr-preface__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .sr-preface__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .sr-preface__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .sr-preface__container {
+    max-width: 1140px;
+  }
+}
 
 .sr-preface__title-row,
 .sr-preface__content-row {
@@ -47,12 +63,13 @@
 .sr-preface__img-col,
 .sr-preface__text-col {
   width: 100%;
-  padding: 0 15px;
+  padding: 30px 15px; /* Increased padding for mobile */
 }
 
 @media (min-width: 768px) {
   .sr-preface__img-col,
   .sr-preface__text-col {
+    padding: 0 15px; /* Padding for desktop */
     width: 50%;
   }
 }
@@ -68,7 +85,7 @@
   text-transform: uppercase;
   color: #151515;
   margin-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
@@ -97,8 +114,12 @@
 }
 
 @keyframes sr-MoveUpDown {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(30px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
 }
 
 .sr-preface__img {
@@ -111,10 +132,12 @@
 /* ── Text Content ────────────────────────────────────────────────────────── */
 .sr-preface__title {
   /* Inherits from global h3 */
+  z-index: 2;
+  position: relative;
   margin-bottom: 15px;
-  font-size: 26px;
+  font-size: 28px;
   color: #151515;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -126,7 +149,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
-  font-family: 'Quicksand', sans-serif; /* Original $body_font */
+  font-family: "Quicksand", sans-serif; /* Original $body_font */
 }
 
 /* ── App Buttons ─────────────────────────────────────────────────────────── */
@@ -141,7 +164,7 @@
   border: 1px solid #ffffff;
   background-color: #ffffff;
   color: #151515;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-decoration: none;
   border-radius: 0;
@@ -158,7 +181,7 @@
 }
 
 .sr-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -169,7 +192,10 @@
   opacity: 0;
   transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
   transform-origin: 0% 100%;
-  transition: transform 0.5s, background-color 0.5s, opacity 0.5s;
+  transition:
+    transform 0.5s,
+    background-color 0.5s,
+    opacity 0.5s;
 }
 
 .sr-btn:hover::before {

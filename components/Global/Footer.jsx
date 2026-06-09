@@ -13,7 +13,7 @@ export default function Footer() {
 
             <div className="sr-footer__top">
               <Link className="sr-footer__logo" href="/">
-                <Image src={data.footerlogo} alt="logo" width={400} height={121} style={{ width: '400px', height: 'auto' }} />
+                <Image src={data.footerlogo} alt="logo" width={400} height={121} />
               </Link>
               <p className="sr-footer__text">{data.footertext}</p>``
 

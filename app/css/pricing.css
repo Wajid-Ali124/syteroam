@@ -556,7 +556,41 @@
     padding: 100px 20px 30px;
   }
   .sr-pricing-card { padding: 40px 20px; }
-  .sr-pricing-calculator, .sr-pricing-summary { padding: 30px 20px; }
-  .total-price { font-size: 48px; }
-  .sr-pricing-details h2 { font-size: 48px; }
+  .sr-pricing-calculator, .sr-pricing-summary { padding: 30px 15px; }
+  .total-price { font-size: 36px; word-break: break-word; }
+  .sr-pricing-details h2 { font-size: 40px; }
+  .sr-pricing-calculator-section { gap: 20px; }
+  .summary-total-box { padding: 25px 15px; }
+  
+  /* Fix tabs overflow */
+  .sr-pricing-tabs {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  .sr-pricing-tab {
+    padding: 14px 20px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .sr-pricing-tab .badge {
+    right: 0;
+    top: -10px;
+  }
+
+  /* Fix badges and selects overflow */
+  .savings-badge {
+    font-size: 13px;
+    padding: 8px 12px;
+    white-space: normal;
+    text-align: center;
+  }
+  .custom-select-trigger {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+  .calc-input-wrapper input {
+    font-size: 18px;
+  }
 }
+
