@@ -2,6 +2,9 @@ import Script from 'next/script';
 import FormTracker from '@/components/Global/FormTracker';
 
 export const metadata = {
+  alternates: {
+    canonical: '/support',
+  },
   title: "Support – SyteRoam",
   description: "Get help with SyteRoam — the native mobile ERP companion for CloudSuite Industrial (SyteLine). Browse FAQs, troubleshoot issues, and contact our support team.",
 };

@@ -594,3 +594,30 @@
   }
 }
 
+@media (max-width: 400px) {
+  .sr-pricing-calculator, .sr-pricing-summary {
+    padding: 20px 12px;
+  }
+  .calc-input-wrapper {
+    height: 55px;
+  }
+  .calc-input-wrapper button {
+    width: 45px;
+    font-size: 20px;
+  }
+  .custom-select-trigger {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .custom-select-option {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .total-price {
+    font-size: 30px;
+  }
+}
+

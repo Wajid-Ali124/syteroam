@@ -1,6 +1,9 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: {
+    canonical: '/privacy',
+  },
   title: "Privacy Policy – SyteRoam",
   description: "SyteRoam's Privacy Policy explains how we collect, use, and protect your data when you use our native mobile ERP companion for CloudSuite Industrial (SyteLine).",
 };

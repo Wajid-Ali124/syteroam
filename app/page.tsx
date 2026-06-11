@@ -17,6 +17,9 @@ const Testimonials = dynamic(() => import('@/components/Home/Testimonials'));
 
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
   title: "SyteRoam — The #1 SyteLine ERP Mobile App for Manufacturing",
   description: "SyteRoam is the leading SyteLine mobile app and ERP system mobile application for CloudSuite Industrial users. A native mobile ERP app for Android and iOS — built for manufacturing, service, and field teams.",
   keywords: "mobile erp app, erp mobile app, erp system mobile application, erp android app, SyteLine mobile app, SyteLine erp mobile app, CloudSuite Industrial mobile, ERP for manufacturing, SyteRoam",

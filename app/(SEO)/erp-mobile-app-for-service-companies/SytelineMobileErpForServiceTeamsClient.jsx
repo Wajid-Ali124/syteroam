@@ -321,10 +321,13 @@ export default function SytelineMobileErpForServiceTeams() {
                 <h2 className="font-['Poppins'] font-bold text-[30px] md:text-[42px] uppercase text-[#151515] leading-tight mb-[15px]">{preface.sectiontitle}</h2>
               </div>
               <p className="sr-preface__desc mb-[25px] text-[#858585] text-[16px] leading-[1.7] font-['Quicksand']">{preface.content}</p>
-              <div className="sr-preface__apps flex flex-wrap mt-0">
+              <div className="sr-preface__apps flex flex-wrap gap-4 mt-0">
                 <Link href={preface.btn1url} target="_blank" className="sr-btn sr-btn--filled inline-block pl-[20px] pr-[20px] py-[15px]">
                   <span dangerouslySetInnerHTML={{ __html: preface.btn1label }}></span>
                 </Link>
+                <a href="/assets/brochure.pdf" download className="sr-btn sr-btn--outline inline-block pl-[20px] pr-[20px] py-[15px]">
+                  <span>Download Brochure</span>
+                </a>
               </div>
             </div>
           </div>

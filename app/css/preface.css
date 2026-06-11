@@ -63,7 +63,7 @@
 .sr-preface__img-col,
 .sr-preface__text-col {
   width: 100%;
-  padding: 30px 15px; /* Increased padding for mobile */
+  padding: 65px 15px; /* Increased padding for mobile */
 }
 
 @media (min-width: 768px) {
@@ -213,6 +213,15 @@
 .sr-btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sr-btn--outline {
+  background-color: #ffffff;
+  color: #6509e2;
+  border: 2px solid #6509e2;
+}
+.sr-btn--outline::before {
+  background-image: linear-gradient(to right bottom, #5a02b4 40%, #6509e2 70%);
 }
 
 /* Specific to Preface Buttons */

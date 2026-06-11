@@ -2,6 +2,9 @@ import ManufacturingErpMobileAppClient from './ManufacturingErpMobileAppClient';
 import pageData from '@/data/page-manufacturing-erp-mobile-app.json';
 
 export const metadata = {
+  alternates: {
+    canonical: '/manufacturing-erp-mobile-app',
+  },
   title: pageData.meta.title,
   description: pageData.meta.description,
   keywords: pageData.meta.keywords,

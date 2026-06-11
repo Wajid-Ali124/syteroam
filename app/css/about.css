@@ -545,3 +545,38 @@ section p {
     font-size: 32px;
   }
 }
+
+@media (max-width: 400px) {
+  .sr-about-hero-content h1 {
+    font-size: 32px;
+    word-break: break-word;
+  }
+  .sg-blob {
+    width: 250px;
+    height: 250px;
+  }
+  .story-graphic-pro {
+    height: 380px;
+  }
+  .sg-glass-card {
+    padding: 10px 12px;
+  }
+  .sg-glass-text span {
+    font-size: 11px;
+  }
+  .role-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .sr-about-cta {
+    padding: 40px 15px;
+  }
+  .sr-about-cta h2 {
+    font-size: 26px;
+  }
+  .sg-pos-1 {
+    top: 0%;
+  }
+  .sg-pos-2 {
+    bottom: 0%;
+  }
+}

@@ -341,6 +341,9 @@ export default function CloudSuiteIndustrialMobileApp() {
                 <Link href={`/${preface.btn1url}`} className="sr-btn sr-btn--filled sr-preface__app-btn pl-0">
                   <span dangerouslySetInnerHTML={{ __html: preface.btn1label }}></span>
                 </Link>
+                <a href="/assets/brochure.pdf" download className="sr-btn sr-btn--outline sr-preface__app-btn">
+                  <span>Download Brochure</span>
+                </a>
               </div>
             </div>
           </div>

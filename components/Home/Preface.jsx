@@ -43,6 +43,9 @@ export default function Preface() {
               <Link href="/contact" className="sr-btn sr-btn--filled sr-preface__app-btn px-6! py-4!">
                 <span>Contact Us</span>
               </Link>
+              <a href="/assets/brochure.pdf" download className="sr-btn sr-btn--outline sr-preface__app-btn px-6! py-4!">
+                <span>Download Brochure</span>
+              </a>
             </div>
           </div>
 

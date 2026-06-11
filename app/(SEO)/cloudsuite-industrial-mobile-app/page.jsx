@@ -2,6 +2,9 @@ import CloudSuiteIndustrialMobileAppClient from './CloudSuiteIndustrialMobileApp
 import pageData from '@/data/page-cloudsuite-industrial-mobile-app.json';
 
 export const metadata = {
+  alternates: {
+    canonical: '/cloudsuite-industrial-mobile-app',
+  },
   title: pageData.meta.title,
   description: pageData.meta.description,
   keywords: pageData.meta.keywords,

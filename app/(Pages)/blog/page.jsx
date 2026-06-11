@@ -1,6 +1,9 @@
 import BlogClient from './BlogClient';
 
 export const metadata = {
+  alternates: {
+    canonical: '/blog',
+  },
   title: "Blog – SyteRoam | ERP Mobile App & SyteLine Insights",
   description: "Read the latest articles, guides, and industry news about SyteRoam, the primary mobile erp app solution for SyteLine.",
   keywords: [

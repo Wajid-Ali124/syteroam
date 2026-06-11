@@ -1,6 +1,9 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: {
+    canonical: '/terms',
+  },
   title: "Terms of Service – SyteRoam",
   description: "Read SyteRoam's Terms of Service (EULA) to understand the rules, rights, and limitations for using our native mobile ERP companion for CloudSuite Industrial (SyteLine).",
 };

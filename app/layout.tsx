@@ -21,6 +21,7 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.syteroam.com"),
   title: "syteroam",
   description: "syteroam Next.js App",
   verification: {
@@ -69,6 +70,41 @@ export default function RootLayout({
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); 
           })(window, document, "clarity", "script", "w5d7cfdkpq");`}
         </Script>
+
+        {/* JSON-LD Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "SyteRoam",
+              "url": "https://www.syteroam.com/",
+              "logo": "https://www.syteroam.com/logo.png",
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+1-949-284-8115",
+                  "contactType": "customer service",
+                  "areaServed": "US",
+                  "availableLanguage": ["English"]
+                }
+              ],
+              "email": [
+                "sales@quadkor.com",
+                "support@quadkor.com"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "9655 Granite Ridge Drive, Suite 200",
+                "addressLocality": "San Diego",
+                "addressRegion": "CA",
+                "postalCode": "92123",
+                "addressCountry": "US"
+              }
+            })
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col">
         {/* Google Tag Manager (noscript) */}
