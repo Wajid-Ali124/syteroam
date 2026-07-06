@@ -21,18 +21,18 @@ export async function generateMetadata({ params }) {
     return { title: "Post Not Found" };
   }
   return {
-    title: `${post.title} – SyteRoam Blog`,
-    description: post.excerpt,
+    title: post.metaTitle || `${post.title} – SyteRoam Blog`,
+    description: post.metaDescription || post.excerpt,
     openGraph: {
-      title: `${post.title} – SyteRoam Blog`,
-      description: post.excerpt,
+      title: post.metaTitle || `${post.title} – SyteRoam Blog`,
+      description: post.metaDescription || post.excerpt,
       type: "article",
       images: post.image ? [{ url: post.image }] : [],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} – SyteRoam Blog`,
-      description: post.excerpt,
+      title: post.metaTitle || `${post.title} – SyteRoam Blog`,
+      description: post.metaDescription || post.excerpt,
     },
   };
 }
@@ -65,17 +65,19 @@ export default async function BlogDetailsPage({ params }) {
       <article className="sr-blog-body">
         <div className="sr-blog-container sr-blog-details-container">
 
-          <div className="sr-blog-details-image-wrap">
-            <Image
-              src={post.image}
-              alt={post.alt}
-              width={800}
-              height={800}
-              priority
-              className="sr-blog-details-image"
-              style={{ width: '100%', height: 'auto', maxWidth: '800px' }}
-            />
-          </div>
+          {!post.hideTopImage && (
+            <div className="sr-blog-details-image-wrap">
+              <Image
+                src={post.image}
+                alt={post.alt || post.title}
+                width={800}
+                height={800}
+                priority
+                className="sr-blog-details-image"
+                style={{ width: '100%', height: 'auto', maxWidth: '800px' }}
+              />
+            </div>
+          )}
 
           {/* Only the content click handler needs client JS */}
           <BlogContentInteractive html={post.content} />
