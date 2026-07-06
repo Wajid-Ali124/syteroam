@@ -22,7 +22,7 @@ export default function Blog() {
         <div className="sr-blog-container">
 
           <div className="sr-blog-grid">
-            {blogsData.map(post => (
+            {Array.from({ length: blogsData.length }, (_, i) => { const post = blogsData[blogsData.length - 1 - i]; return (
               <div key={post.id} className="sr-blog-card">
                 
                 {/* Card Image */}
@@ -57,7 +57,8 @@ export default function Blog() {
                 </div>
 
               </div>
-            ))}
+            ); })}
+
           </div>
 
         </div>
