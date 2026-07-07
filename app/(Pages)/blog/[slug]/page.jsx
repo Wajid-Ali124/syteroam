@@ -23,6 +23,14 @@ export async function generateMetadata({ params }) {
   return {
     title: post.metaTitle || `${post.title} – SyteRoam Blog`,
     description: post.metaDescription || post.excerpt,
+    ...(post.canonicalUrl && {
+      alternates: {
+        canonical: post.canonicalUrl,
+      },
+    }),
+    ...(post.robots && {
+      robots: post.robots,
+    }),
     openGraph: {
       title: post.metaTitle || `${post.title} – SyteRoam Blog`,
       description: post.metaDescription || post.excerpt,
