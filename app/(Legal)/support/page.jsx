@@ -2,6 +2,10 @@ import Script from 'next/script';
 import FormTracker from '@/components/Global/FormTracker';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/support',
   },

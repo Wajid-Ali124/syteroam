@@ -2,6 +2,10 @@ import CloudSuiteIndustrialMobileAppClient from './CloudSuiteIndustrialMobileApp
 import pageData from '@/data/page-cloudsuite-industrial-mobile-app.json';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/cloudsuite-industrial-mobile-app',
   },

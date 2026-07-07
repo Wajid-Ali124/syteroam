@@ -1,6 +1,10 @@
 import AboutClient from './AboutClient';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/about-us',
   },

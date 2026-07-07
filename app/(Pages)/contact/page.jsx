@@ -1,6 +1,10 @@
 import ContactClient from './ContactClient';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/contact',
   },

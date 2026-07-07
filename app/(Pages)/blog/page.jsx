@@ -1,6 +1,10 @@
 import BlogClient from './BlogClient';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/blog',
   },

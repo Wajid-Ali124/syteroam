@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/privacy',
   },

@@ -2,6 +2,10 @@ import ManufacturingErpMobileAppClient from './ManufacturingErpMobileAppClient';
 import pageData from '@/data/page-manufacturing-erp-mobile-app.json';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/manufacturing-erp-mobile-app',
   },

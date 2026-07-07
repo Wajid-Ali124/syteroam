@@ -2,6 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
   title: "404 - Page Not Found | SyteRoam",
   description: "The page you are looking for could not be found.",
 };

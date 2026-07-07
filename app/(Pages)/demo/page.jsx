@@ -1,6 +1,10 @@
 import DemoClient from './DemoClient';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/demo',
   },

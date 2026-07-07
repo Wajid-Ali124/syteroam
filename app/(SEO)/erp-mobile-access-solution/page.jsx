@@ -2,6 +2,10 @@ import MobileErpSolutionsClient from './MobileErpSolutionsClient';
 import pageData from '@/data/page-mobile-erp-solutions.json';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/erp-mobile-access-solution',
   },

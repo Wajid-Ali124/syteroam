@@ -1,6 +1,10 @@
 import PricingClient from './PricingClient';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/pricing',
   },

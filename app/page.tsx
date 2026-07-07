@@ -17,6 +17,10 @@ const Testimonials = dynamic(() => import('@/components/Home/Testimonials'));
 
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/',
   },

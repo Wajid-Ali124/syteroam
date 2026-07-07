@@ -2,6 +2,11 @@
   {
     "id": 1,
     "slug": "meet-syteroam-cloudsuite-industrial-mobile",
+    "canonicalUrl": "https://syteroam.com/blog/meet-syteroam-cloudsuite-industrial-mobile",
+    "robots": {
+      "index": true,
+      "follow": true
+    },
     "title": "Meet SyteRoam: CloudSuite Industrial, Now Truly Mobile",
     "category": "Product Launch",
     "date": "May 08, 2026",
@@ -13,6 +18,11 @@
   {
     "id": 2,
     "slug": "syteroam-available-infor-marketplace",
+    "canonicalUrl": "https://syteroam.com/blog/syteroam-available-infor-marketplace",
+    "robots": {
+      "index": true,
+      "follow": true
+    },
     "title": "SyteRoam is Now Available on the Infor Marketplace",
     "category": "Company News",
     "date": "May 08, 2026",
@@ -24,6 +34,11 @@
   {
     "id": 3,
     "slug": "why-your-mobile-app-for-cloud-suite-industrial-is-slowing-down-decision-making-and-how-to-fix-it",
+    "canonicalUrl": "https://syteroam.com/blog/why-your-mobile-app-for-cloud-suite-industrial-is-slowing-down-decision-making-and-how-to-fix-it",
+    "robots": {
+      "index": true,
+      "follow": true
+    },
     "title": "Why Your Mobile App for Cloud Suite Industrial Is Slowing Down Decision-Making and How to Fix It",
     "category": "ERP Mobility",
     "date": "May 30, 2026",

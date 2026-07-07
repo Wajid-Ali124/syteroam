@@ -2,6 +2,10 @@ import AccessSytelineErpRemotelyClient from './AccessSytelineErpRemotelyClient';
 import pageData from '@/data/page-access-syteline-erp-remotely.json';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/erp-remote-access-mobile',
   },

@@ -2,6 +2,10 @@ import SytelineMobileErpForServiceTeamsClient from './SytelineMobileErpForServic
 import pageData from '@/data/page-syteline-mobile-erp-for-service-teams.json';
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: '/erp-mobile-app-for-service-companies',
   },
